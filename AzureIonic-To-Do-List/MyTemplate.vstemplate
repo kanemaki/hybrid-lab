@@ -1,0 +1,274 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>AzureIonic-To-Do-List</Name>
+    <Description>Ionic To-Do list sample application allows user to create a list of items and store it on Azure, delivering an end to end app building experience.</Description>
+    <ProjectType>JavaScript</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>AzureIonic-To-Do-List</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+    <CreateInPlace>true</CreateInPlace>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="AzureIonic.jsproj" File="AzureIonic.jsproj" ReplaceParameters="true">
+      <Folder Name="hooks" TargetFolderName="hooks">
+        <Folder Name="after_prepare" TargetFolderName="after_prepare">
+          <ProjectItem ReplaceParameters="true" TargetFileName="010_add_platform_class.js">010_add_platform_class.js</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+      </Folder>
+      <Folder Name="merges" TargetFolderName="merges">
+        <Folder Name="android" TargetFolderName="android">
+          <Folder Name="scripts" TargetFolderName="scripts">
+            <ProjectItem ReplaceParameters="true" TargetFileName="android2.3-jscompat.js">android2.3-jscompat.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="platformOverrides.js">platformOverrides.js</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="windows" TargetFolderName="windows">
+          <Folder Name="scripts" TargetFolderName="scripts">
+            <ProjectItem ReplaceParameters="true" TargetFileName="platformOverrides.js">platformOverrides.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="winstore-jscompat.js">winstore-jscompat.js</ProjectItem>
+          </Folder>
+        </Folder>
+      </Folder>
+      <Folder Name="plugins" TargetFolderName="plugins" />
+      <Folder Name="resources" TargetFolderName="resources">
+        <Folder Name="android" TargetFolderName="android">
+          <Folder Name="icon" TargetFolderName="icon">
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-hdpi-icon.png">drawable-hdpi-icon.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-ldpi-icon.png">drawable-ldpi-icon.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-mdpi-icon.png">drawable-mdpi-icon.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-xhdpi-icon.png">drawable-xhdpi-icon.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-xxhdpi-icon.png">drawable-xxhdpi-icon.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-xxxhdpi-icon.png">drawable-xxxhdpi-icon.png</ProjectItem>
+          </Folder>
+          <Folder Name="splash" TargetFolderName="splash">
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-land-hdpi-screen.png">drawable-land-hdpi-screen.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-land-ldpi-screen.png">drawable-land-ldpi-screen.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-land-mdpi-screen.png">drawable-land-mdpi-screen.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-land-xhdpi-screen.png">drawable-land-xhdpi-screen.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-land-xxhdpi-screen.png">drawable-land-xxhdpi-screen.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-land-xxxhdpi-screen.png">drawable-land-xxxhdpi-screen.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-port-hdpi-screen.png">drawable-port-hdpi-screen.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-port-ldpi-screen.png">drawable-port-ldpi-screen.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-port-mdpi-screen.png">drawable-port-mdpi-screen.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-port-xhdpi-screen.png">drawable-port-xhdpi-screen.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-port-xxhdpi-screen.png">drawable-port-xxhdpi-screen.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="drawable-port-xxxhdpi-screen.png">drawable-port-xxxhdpi-screen.png</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="ios" TargetFolderName="ios">
+          <Folder Name="icon" TargetFolderName="icon">
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon.png">icon.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon@2x.png">icon@2x.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-40.png">icon-40.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-40@2x.png">icon-40@2x.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-50.png">icon-50.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-50@2x.png">icon-50@2x.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-60.png">icon-60.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-60@2x.png">icon-60@2x.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-60@3x.png">icon-60@3x.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-72.png">icon-72.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-72@2x.png">icon-72@2x.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-76.png">icon-76.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-76@2x.png">icon-76@2x.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-small.png">icon-small.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-small@2x.png">icon-small@2x.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="icon-small@3x.png">icon-small@3x.png</ProjectItem>
+          </Folder>
+          <Folder Name="splash" TargetFolderName="splash">
+            <ProjectItem ReplaceParameters="false" TargetFileName="Default@2x~iphone.png">Default@2x~iphone.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Default~iphone.png">Default~iphone.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Default-568h@2x~iphone.png">Default-568h@2x~iphone.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Default-667h.png">Default-667h.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Default-736h.png">Default-736h.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Default-Landscape@2x~ipad.png">Default-Landscape@2x~ipad.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Default-Landscape~ipad.png">Default-Landscape~ipad.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Default-Landscape-736h.png">Default-Landscape-736h.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Default-Portrait@2x~ipad.png">Default-Portrait@2x~ipad.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Default-Portrait~ipad.png">Default-Portrait~ipad.png</ProjectItem>
+          </Folder>
+        </Folder>
+        <ProjectItem ReplaceParameters="false" TargetFileName="icon.png">icon.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="splash.png">splash.png</ProjectItem>
+      </Folder>
+      <Folder Name="scss" TargetFolderName="scss">
+        <ProjectItem ReplaceParameters="false" TargetFileName="ionic.app.scss">ionic.app.scss</ProjectItem>
+      </Folder>
+      <Folder Name="www" TargetFolderName="www">
+        <Folder Name="css" TargetFolderName="css">
+          <ProjectItem ReplaceParameters="true" TargetFileName="style.css">style.css</ProjectItem>
+        </Folder>
+        <Folder Name="img" TargetFolderName="img">
+          <ProjectItem ReplaceParameters="false" TargetFileName=".DS_Store">.DS_Store</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="azure.png">azure.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="azureAccount.png">azureAccount.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Ionic_Logo.png">Ionic_Logo.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="plus.png">plus.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="tryAzureService.png">tryAzureService.png</ProjectItem>
+        </Folder>
+        <Folder Name="js" TargetFolderName="js">
+          <ProjectItem ReplaceParameters="true" TargetFileName="app.js">app.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="controllers.js">controllers.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="MobileServices.Web.js">MobileServices.Web.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="platformOverrides.js">platformOverrides.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="services.js">services.js</ProjectItem>
+        </Folder>
+        <Folder Name="lib" TargetFolderName="lib">
+          <Folder Name="angular" TargetFolderName="angular">
+            <ProjectItem ReplaceParameters="false" TargetFileName=".bower.json">.bower.json</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="angular.js">angular.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="angular.min.js">angular.min.js</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="angular.min.js.gzip">angular.min.js.gzip</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="angular.min.js.map">angular.min.js.map</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="angular-csp.css">angular-csp.css</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="bower.json">bower.json</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="index.js">index.js</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="package.json">package.json</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+          </Folder>
+          <Folder Name="angular-animate" TargetFolderName="angular-animate">
+            <ProjectItem ReplaceParameters="false" TargetFileName=".bower.json">.bower.json</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="angular-animate.js">angular-animate.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="angular-animate.min.js">angular-animate.min.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="angular-animate.min.js.map">angular-animate.min.js.map</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="bower.json">bower.json</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="index.js">index.js</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="package.json">package.json</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+          </Folder>
+          <Folder Name="angular-sanitize" TargetFolderName="angular-sanitize">
+            <ProjectItem ReplaceParameters="false" TargetFileName=".bower.json">.bower.json</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="angular-sanitize.js">angular-sanitize.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="angular-sanitize.min.js">angular-sanitize.min.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="angular-sanitize.min.js.map">angular-sanitize.min.js.map</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="bower.json">bower.json</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="index.js">index.js</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="package.json">package.json</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+          </Folder>
+          <Folder Name="angular-ui-router" TargetFolderName="angular-ui-router">
+            <Folder Name="api" TargetFolderName="api">
+              <ProjectItem ReplaceParameters="true" TargetFileName="angular-ui-router.d.ts">angular-ui-router.d.ts</ProjectItem>
+            </Folder>
+            <Folder Name="release" TargetFolderName="release">
+              <ProjectItem ReplaceParameters="true" TargetFileName="angular-ui-router.js">angular-ui-router.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="angular-ui-router.min.js">angular-ui-router.min.js</ProjectItem>
+            </Folder>
+            <Folder Name="src" TargetFolderName="src">
+              <ProjectItem ReplaceParameters="true" TargetFileName="common.js">common.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="resolve.js">resolve.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="state.js">state.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="stateDirectives.js">stateDirectives.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="stateFilters.js">stateFilters.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="templateFactory.js">templateFactory.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="urlMatcherFactory.js">urlMatcherFactory.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="urlRouter.js">urlRouter.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="view.js">view.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="viewDirective.js">viewDirective.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="viewScroll.js">viewScroll.js</ProjectItem>
+            </Folder>
+            <ProjectItem ReplaceParameters="false" TargetFileName=".bower.json">.bower.json</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="bower.json">bower.json</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="CHANGELOG.md">CHANGELOG.md</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="CONTRIBUTING.md">CONTRIBUTING.md</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="LICENSE">LICENSE</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+          </Folder>
+          <Folder Name="ionic" TargetFolderName="ionic">
+            <Folder Name="css" TargetFolderName="css">
+              <ProjectItem ReplaceParameters="true" TargetFileName="ionic.css">ionic.css</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ionic.min.css">ionic.min.css</ProjectItem>
+            </Folder>
+            <Folder Name="fonts" TargetFolderName="fonts">
+              <ProjectItem ReplaceParameters="false" TargetFileName="ionicons.eot">ionicons.eot</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="ionicons.svg">ionicons.svg</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="ionicons.ttf">ionicons.ttf</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="ionicons.woff">ionicons.woff</ProjectItem>
+            </Folder>
+            <Folder Name="js" TargetFolderName="js">
+              <ProjectItem ReplaceParameters="true" TargetFileName="ionic.bundle.js">ionic.bundle.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ionic.bundle.min.js">ionic.bundle.min.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ionic.js">ionic.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ionic.min.js">ionic.min.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ionic-angular.js">ionic-angular.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ionic-angular.min.js">ionic-angular.min.js</ProjectItem>
+            </Folder>
+            <Folder Name="scss" TargetFolderName="scss">
+              <Folder Name="ionicons" TargetFolderName="ionicons">
+                <ProjectItem ReplaceParameters="false" TargetFileName="_ionicons-font.scss">_ionicons-font.scss</ProjectItem>
+                <ProjectItem ReplaceParameters="false" TargetFileName="_ionicons-icons.scss">_ionicons-icons.scss</ProjectItem>
+                <ProjectItem ReplaceParameters="false" TargetFileName="_ionicons-variables.scss">_ionicons-variables.scss</ProjectItem>
+                <ProjectItem ReplaceParameters="false" TargetFileName="ionicons.scss">ionicons.scss</ProjectItem>
+              </Folder>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_action-sheet.scss">_action-sheet.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_animations.scss">_animations.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_backdrop.scss">_backdrop.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_badge.scss">_badge.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_bar.scss">_bar.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_button.scss">_button.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_button-bar.scss">_button-bar.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_checkbox.scss">_checkbox.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_form.scss">_form.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_grid.scss">_grid.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_items.scss">_items.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_list.scss">_list.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_loading.scss">_loading.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_menu.scss">_menu.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_mixins.scss">_mixins.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_modal.scss">_modal.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_platform.scss">_platform.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_popover.scss">_popover.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_popup.scss">_popup.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_progress.scss">_progress.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_radio.scss">_radio.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_range.scss">_range.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_refresher.scss">_refresher.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_reset.scss">_reset.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_scaffolding.scss">_scaffolding.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_select.scss">_select.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_slide-box.scss">_slide-box.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_slides.scss">_slides.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_spinner.scss">_spinner.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_tabs.scss">_tabs.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_toggle.scss">_toggle.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_transitions.scss">_transitions.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_type.scss">_type.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_util.scss">_util.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="_variables.scss">_variables.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="ionic.scss">ionic.scss</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="tsconfig.json">tsconfig.json</ProjectItem>
+            </Folder>
+            <ProjectItem ReplaceParameters="false" TargetFileName=".bower.json">.bower.json</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="bower.json">bower.json</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="templates" TargetFolderName="templates">
+          <ProjectItem ReplaceParameters="true" TargetFileName="tab-checklist.html">tab-checklist.html</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="tab-home.html">tab-home.html</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="tabs.html">tabs.html</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="false" TargetFileName=".DS_Store">.DS_Store</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName=".bowerrc">.bowerrc</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="bower.json">bower.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="config.xml">config.xml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="gulpfile.js">gulpfile.js</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ionic.project">ionic.project</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="package.json">package.json</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="taco.json">taco.json</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Microsoft.VisualStudio.MultiDeviceHybridApps.VSTemplateWizard, Culture=neutral</Assembly>
+    <FullClassName>Microsoft.VisualStudio.MultiDeviceHybridApps.VSTemplateWizard.MultiDeviceApplicationProjectWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>
